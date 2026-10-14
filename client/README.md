@@ -1,16 +1,46 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website built with React and Vite. The site presents my professional background, education, projects, technical services, and contact information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive portfolio design
+- Six routed pages
+- React Router navigation
+- Professional profile and résumé
+- Project portfolio with images and descriptions
+- Education and professional qualifications
+- Technical services overview
+- Contact form with client-side state handling
+- Responsive layout for desktop and mobile devices
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Home** — Introduction and portfolio overview
+- **About** — Professional background and résumé
+- **Projects** — Selected academic and professional projects
+- **Education** — Education and professional qualifications
+- **Services** — Technical services and areas of expertise
+- **Contact** — Contact form
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- React Router
+- HTML
+- CSS
+
+## Running the Project Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/junxd48/react-portfolio.git
+```
+
+## Live Demo
+
+You can view the deployed website here:
+[Live Portfolio Demo](https://react-portfolio-gamma-eight-60.vercel.app/)

@@ -1,4 +1,7 @@
 import express from 'express';
+import { authenticateToken } from '../middleware/auth-middleware.js';
+import { authorizeAdmin } from '../middleware/authorize-admin.js';
+
 import {
     createProject,
     deleteProject,
@@ -7,21 +10,21 @@ import {
     updateProject
 } from '../controllers/projects-controllers.js';
 
+// Create an Express router for project-related endpoints.
 const router = express.Router();
 
-// REST API simulate CRUD
+// READ: Public access.
+router.get('/', getAllProjects);
+router.get('/:id', getProjectById);
 
-// READs
-router.get("/", getAllProjects);
-router.get("/:id", getProjectById);
+// CREATE: Authentication required.
+router.post('/', authenticateToken, authorizeAdmin, createProject);
 
-// CREATE
-router.post("/", createProject);
+// UPDATE: Authentication required.
+router.put('/:id', authenticateToken, authorizeAdmin, updateProject);
 
-// UPDATE
-router.put("/:id", updateProject);
+// DELETE: Authentication required.
+router.delete('/:id', authenticateToken, authorizeAdmin, deleteProject);
 
-// DELETE
-router.delete("/:id", deleteProject);
-
+// Export the router for registration in server.js.
 export default router;

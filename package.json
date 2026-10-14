@@ -1,0 +1,21 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "COMP229 Assignment 2 - MERN Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"node --watch server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junxd48/myportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

@@ -1,0 +1,47 @@
+/***********************************************/
+/* Landing page. Contains welcome text,        */
+/* primary call-to-action, and innovation.png. */
+/***********************************************/
+
+// Link component allows navigation between pages w/o reloading the entire website.
+import { Link } from "react-router-dom";
+
+// Function represents the content displayed on the Home page.
+function Home() {
+  return (
+    // Main section. The classes are used to apply the styles from CSS.
+    <section className="hero">
+      <div className="hero-content">
+        <p className="intro">WELCOME TO MY PORTFOLIO</p>
+        <h1>
+          Building Technology Solutions
+          <br />
+          with Purpose
+        </h1>
+        <p className="hero-description">
+          I am an IT and software professional with experience in
+          infrastructure, networking, systems support, and application
+          development.
+        </p>
+        <Link to="/about" className="primary-button">
+          Learn More About Me
+        </Link>
+      </div>
+      <div className="hero-image-container">
+        <img
+          src="/images/innovation.png"
+
+          // alternative text if the image cannot load.
+          alt="Technology and innovation illustration"
+
+          // CSS class used to control the image's size and appearance.
+          className="hero-image"
+        />
+      </div>
+    </section>
+  );
+}
+
+
+// Exports so it can be imported and used by other files
+export default Home;
